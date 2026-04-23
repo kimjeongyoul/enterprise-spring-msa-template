@@ -1,0 +1,14 @@
+plugins {
+    id 'org.springframework.boot'
+}
+
+dependencies {
+    api project(':infra:common-core')
+    api 'org.springframework.boot:spring-boot-starter-web'
+    api 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    api 'org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j'
+    api 'org.springframework.kafka:spring-kafka'
+}
+
+bootJar { enabled = false }
+jar { enabled = true }

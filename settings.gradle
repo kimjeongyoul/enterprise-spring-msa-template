@@ -1,0 +1,16 @@
+rootProject.name = 'msa-platform-v2'
+
+// Level 1: Infra (Core Engine)
+include 'infra:common-core'
+include 'infra:common-web'
+include 'infra:gateway-service'
+include 'infra:common-service'
+
+// Level 2: Base Services (The Starter)
+include 'services:base:auth-service'
+include 'services:base:notification-service'
+
+// Level 3: Commerce Verticals (Advanced Case)
+include 'services:commerce:order-service'
+include 'services:commerce:product-service'
+include 'services:commerce:payment-service'
